@@ -1,0 +1,26 @@
+#include<stdio.h>
+int main() {
+    int m, n, a, b;
+    int p;
+    p=0;
+    printf("please input the number of chicken and rabbit :m  and the number of feet :n\n");
+    scanf_s("%d %d", &m, &n);
+    for (a = 0; a < m; a++)
+    {
+        b=m-a;
+        if(n==2*a+4*b)
+        {
+            printf("the number of chicken is :%d,the number of rabbit is :^%d",a,b);
+            p=0;
+            break;
+        }
+        else
+        {
+            p=1;
+        }
+    }
+    if(p>0)
+    {
+        printf("error");
+    }
+}
